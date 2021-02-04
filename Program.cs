@@ -1,61 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace Advertisement_Message
+namespace Article2._0
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[] phrases = new string[] {
-                "Excellent product. ",
-                "Such a great product. " ,
-                "I always use that product. ",
-                "Best product of its category. ",
-                "Exceptional product. ",
-                "I can’t live without this product. "
-            };
-
-            string[] events = new string[] {
-                "Now I feel good. ",
-                "I have succeeded with this product. ",
-                "Makes miracles.I am happy of the results! ",
-                "I cannot believe but now I feel awesome. ",
-                "Try it yourself, I am very satisfied. ",
-                "I feel great. "
-                
-            };
-            string[] authors = new string[] {
-                "Diana - ",
-                "Petya - ",
-                "Stella - ",
-                "Elena - ",
-                "Katya - ",
-                "Iva - ",
-                "Annie - ",
-                "Eva - ",
-            };
-            string[] cities = new string[] {
-                "Burgas",
-                "Sofia",
-                "Plovdiv",
-                "Varna",
-                "Ruse",
-            };
-
-            Random rand = new Random();
-            Console.WriteLine("Enter the number of advertisement message you want to generate: ");
-            int number = int.Parse(Console.ReadLine());
-            for(int i = 0; i < number; i++)
+            List<Article> articles = new List<Article>();
+            Console.WriteLine("Enter the number of articles: ");
+            int numberOfArticles = int.Parse(Console.ReadLine());
+            for(int i = 0; i < numberOfArticles; i++)
             {
-                int randomPhr = rand.Next(0, phrases.Length);
-                int randomEve = rand.Next(0, events.Length);
-                int randomAut = rand.Next(0, authors.Length);
-                int randomCity = rand.Next(0, cities.Length);
-                Console.WriteLine(phrases[randomPhr] + events[randomEve] + authors[randomAut] + cities[randomCity]);
+                string[] input = Console.ReadLine().Split(", ");
+                Article article = new Article(input[0], input[1], input[2]);
+                articles.Add(article);
             }
+            Console.WriteLine("Enter the criteria of sorting: ");
+            string criteria = Console.ReadLine();
+            var order = articles.OrderBy(s => s.Title);
+            if(criteria == "title")
+            {
+                
+            }
+            else if(criteria == "author")
+            {
+                order = articles.OrderBy(s => s.Author);
+            }
+            else
+            {
+                order = articles.OrderBy(s => s.Content);
+            }
+           
+            
+            foreach (Article article in order)
+            {
+                Console.WriteLine(article.Title + " - " + article.Content + " : " + article.Author);
+            }
+
         }
-    
+    }
+
+    class Article
+    {
+        public Article(string title, string content, string author)
+        {
+            Title = title;
+            Content = content;
+            Author = author;
+        }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public string Author { get; set; }
+
         
+
     }
 }
