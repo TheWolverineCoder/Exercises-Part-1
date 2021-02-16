@@ -1,2 +1,2 @@
 # Exercises-Part-1
-Here are some of the exercises I did.
+Here are some of the console apps I did as an exercise.
