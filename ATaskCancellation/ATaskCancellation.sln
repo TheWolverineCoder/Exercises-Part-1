@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATaskCancellation", "ATaskCancellation.csproj", "{189260E9-855F-48DD-917B-BE63A9CBBECB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{189260E9-855F-48DD-917B-BE63A9CBBECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189260E9-855F-48DD-917B-BE63A9CBBECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189260E9-855F-48DD-917B-BE63A9CBBECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189260E9-855F-48DD-917B-BE63A9CBBECB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16494C0C-60DB-46D9-B95D-BCBAD7CF4AFB}
+	EndGlobalSection
+EndGlobal
