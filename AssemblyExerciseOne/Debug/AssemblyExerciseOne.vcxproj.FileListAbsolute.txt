@@ -1,0 +1,2 @@
+C:\Users\Plamen\source\repos\AssemblyExerciseOne\Debug\AssemblyExerciseOne.exe
+C:\Users\Plamen\source\repos\AssemblyExerciseOne\Debug\AssemblyExerciseOne.pdb
