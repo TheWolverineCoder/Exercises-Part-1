@@ -1,0 +1,2 @@
+C:\Users\Plamen\source\repos\AssemblySITypesCondition\Debug\AssemblySITypesCondition.exe
+C:\Users\Plamen\source\repos\AssemblySITypesCondition\Debug\AssemblySITypesCondition.pdb
